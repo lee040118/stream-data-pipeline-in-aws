@@ -22,7 +22,7 @@ https://docs.tweepy.org/ko/v3.9.0/getting_started.html
 
 https://developer.twitter.com/en
 
-<img src="C:/Users/HOON/Desktop/twitter/images/apikey.png" style="zoom:50%;" /> 
+<img src="./images/apikey.png" style="zoom:50%;" /> 
 
 
 
