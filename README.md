@@ -4,13 +4,15 @@
 
 ## 1. 프로젝트 개요
 
+> #### Twitter에서 Bitcoin으로 태그 되는 개시물의 수와 Bitcoin의 거래량의 상관관계를 분석해본다.
+>
+> #### Aws kinesis를 통해 stream data를 처리해보고 redshift를 통해 DW를 구축해 Stream pipeline을 구성해본다.
+>
+> 1. EC2에서  coinone의 BTC 코인의 분봉 데이터와 Twitter api에서 bitcoin으로 태그된 데이터를 수집한다.
+> 2. 실시간으로 수집된 데이터를 kinesis firehose를 통해 S3와 Redshift에 전달한다.
+> 3. Data Studio를 통해 Dashboard를 만들고 분석한다.
+
 ![](./images/demo.png)
-
-	1. EC2에서  coinone의 BTC 코인의 분봉 데이터와 Twitter api에서 bitcoin으로 태그된 데이터를 수집한다.
-	1. 실시간으로 수집된 데이터를 kinesis firehose를 통해 S3와 Redshift에 전달한다.
-	1. Data Studio를 통해 Dashboard를 만들고 분석한다.
-
-
 
 ## 2.  Twitter Streaming Data & Coin Streaming Data
 
