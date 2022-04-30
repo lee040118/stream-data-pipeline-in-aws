@@ -101,11 +101,20 @@ sudo pip install tweepy==3.8.0
 
 - s3 COPY command options 
 
-  - COPY option을 통해 s3에서 redshift table로 json형태의 copy가 가능하다
+  - COPY option을 통해 s3에서 redshift table로 json형태의 copy가 가능하다.
 
-  - ./s3/jsonpath2.json
+  - s3에 2가지 json 파일을 업로드해준다. 
 
+  - ./s3/jsonpath.json, ./s3/jsonpath2.json
+  
     ```
+    {
+        "jsonpaths": [
+            "$.id",
+            "$.created_at",
+            "$.text"
+        ]
+    }
     {
         "jsonpaths2": [
             "$.candle_date_time",
@@ -133,6 +142,12 @@ sudo pip install tweepy==3.8.0
 ##### 3) monitoring
 
 ![](./images/f-4.png) 
+
+##### 4) check data in redshift
+
+![](./images/red-t-1.png) 
+
+![](./images/red-t-2.png) 
 
 
 
