@@ -1,0 +1,7 @@
+{
+    "jsonpaths": [
+        "$.id",
+        "$.created_at",
+        "$.text"
+    ]
+}

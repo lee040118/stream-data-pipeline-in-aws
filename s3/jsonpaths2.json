@@ -1,0 +1,12 @@
+{
+    "jsonpaths2": [
+        "$.candle_date_time",
+        "$.market",
+        "$.opening_price",
+        "$.closing_price",
+        "$.low_price",
+        "$.high_price",
+        "$.target_volume",
+        "$.timestamp"
+    ]
+}
