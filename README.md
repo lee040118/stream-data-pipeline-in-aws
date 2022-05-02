@@ -4,7 +4,7 @@
 
 ## 1. 프로젝트 개요
 
-> #### Twitter에서 Bitcoin으로 태그 되는 개시물의 수와 Bitcoin의 거래량의 상관관계를 분석해본다.
+> #### Twitter에서 Bitcoin으로 태그 되는 게시물의 수와 Bitcoin의 거래량의 상관관계를 분석해본다.
 >
 > #### Aws kinesis를 통해 stream data를 처리해보고 redshift를 통해 DW를 구축해 Stream pipeline을 구성해본다.
 >
@@ -47,7 +47,16 @@ sudo apt install python
 sudo apt-get install pip
 sudo pip install boto3
 sudo pip install tweepy==3.8.0
+sudo apt-get install cron
 ```
+
+cron 스케줄을 등록한다
+
+```
+* * * * * python3 /home/ubuntu/coinstream/main.py
+```
+
+
 
 ## 4. Redshift
 
@@ -156,3 +165,5 @@ sudo pip install tweepy==3.8.0
 - Redshift데이터를 Datastudio와 연동해 Dashboard를 만든다. 
 
 ##### 1) 시간  분 별 수집된 Twitter 갯수, BTC 분봉의 거래량, 고가, 저가 시각화
+
+![](./images/datastudio.png)
